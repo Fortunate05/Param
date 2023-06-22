@@ -6,10 +6,15 @@ import {
 } from "react-router-dom";
 import App from './App.jsx'
 import './index.css'
+import CardInfo from './components/CardInfo.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <App/>
+  },
+  {
+    path: "/card/:title",
     element: <App/>
   },
 ]);
